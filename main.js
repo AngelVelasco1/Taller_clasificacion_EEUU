@@ -1,10 +1,10 @@
 //! Crea un array de objetos
     const notes = [
-    {tradicional: "90-100", range: "12-14", letter: "A", rating: "4", message: "Exelent"},
-    {tradicional: "80-89", range: "9-11", letter: "B", rating: "3", message: "Demostrate"},
-    {tradicional: "70-79", range: "6-8", letter: "C", rating: "2", message: "Aprochaes"},
-    {tradicional: "60-69", range: "3-5", letter: "D", rating: "1", message: "Fails"},
-    {tradicional: ">60", range: "1-2", letter: "E", rating: "0", message: "lucks all"},
+    {tradicional: "90-100", range: "12-14", letter: "A", rating: "5", message: "Exelent"},
+    {tradicional: "80-89", range: "9-11", letter: "B", rating: "4", message: "Demostrate"},
+    {tradicional: "70-79", range: "6-8", letter: "C", rating: "3", message: "Aprochaes"},
+    {tradicional: "60-69", range: "3-5", letter: "D", rating: "2", message: "Fails"},
+    {tradicional: ">60", range: "1-2", letter: "E", rating: "1", message: "lucks all"},
     {tradicional: "0", range: "0", letter: "F", rating: "0", message: "no attemp"},
 
 ]
@@ -78,20 +78,23 @@ function range(){
 }
 
 function sbg (){
-    if (nota_user === "4"){
+    if (nota_user === "5"){
     alert(`Tu calificación es: ${notes[0].letter}`);
     }
-    else if (nota_user === "3"){
+    else if (nota_user === "4"){
     alert(`Tu calificación es: ${notes[1].letter}`);
     }
-    else if (nota_user === "2"){
+    else if (nota_user === "3"){
     alert(`Tu calificación es: ${notes[2].letter}`);
     }
-    else if (nota_user === "1"){
+    else if (nota_user === "2"){
     alert(`Tu calificación es: ${notes[3].letter}`);
     }
-    else if (nota_user === "0"){
+    else if (nota_user === "1"){
     alert(`Tu calificación es: ${notes[4].letter}`);
+    }
+     else if (nota_user === "0"){
+    alert(`Tu calificación es: ${notes[5].letter}`);
     }
     else {
     alert("Intente de nuevo con ENTER, usa un numero de 0 a 4");
